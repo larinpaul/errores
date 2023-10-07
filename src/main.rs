@@ -39,18 +39,18 @@ use std::error::Error;
 
 
 // fn main() {
-
+//
 //     // panic!("error");
-
-
+//
+//
 //     // let vector = vec![100,200,300,400,500];
-
+//
 //     // let aux = vector[9];
-
-
+//
+//
 //     // $env:RUST_BACKTRACE=1; cargo run
-
-
+//
+//
 //     //// Errores recuperables con Result
 //     // La mayoría de los errores no son lo sificiente graves como para
 //     // requerir que el programa se detenga por completo.
@@ -61,28 +61,28 @@ use std::error::Error;
 //     // archivo no existe, es posible que deseemos crear el archivo
 //     // en lugar de finalizar el proceso.
 //     ////
-
+//
 //     // // Enumeración Result
 //     // enum Result<T, E> {
 //     //     Ok(T),
 //     //     Err(E),
 //     // }
-
-
+//
+//
 //     // let f = File::open("hola.txt"); // no type
 //     // let f: u32 = File::open("hola.txt"); // error
-
+//
 //     // let f = File::open("hola.txt");
-    
+//    
 //     // let f = match f {
 //     //     Ok(fichero) => fichero,
 //     //     Err(error) => panic!("Error abriendo el fichero: {:?}", error),
 //     // };
 //     // // $env:RUST_BACKTRACE=0
-
-
+//
+//
 //     // let f = File::open("hola.txt");
-
+//
 //     // let f = match f {
 //     //     Ok(fichero) => fichero,
 //     //     Err(error) => match error.kind() {
@@ -95,16 +95,16 @@ use std::error::Error;
 //     //         }
 //     //     }
 //     // };
-
-
+//
+//
 //     // let f= File::open("hola.txt").unwrap();
-
-
+//
+//
 //     // let f = File::open("hola.txt").expect("Error al abrir hola.txt");
-
-
+//
+//
 //     // let f = File::open("hola.txt")?;
-    
+//    
 // }
 
 fn main() -> Result<(), Box<dyn Error>> {
